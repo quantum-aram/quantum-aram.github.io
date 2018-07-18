@@ -44,14 +44,14 @@ comments:
   # Notification settings. When enabled, users can choose to receive notifications
   # via email when someone adds a reply or a new comment. This requires an account
   # with Mailgun, which you can get for free at http://mailgun.com.
-  #notifications:
+  notifications:
     # Enable notifications
-    #enabled: true
+    enabled: true
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    #apiKey: "1q2w3e4r"
+    apiKey: "yMGRt7aaWtc7KVm2NtS+gy+o3zc488Kqev+XaKul1lsKaqz1CDwDMSAE4xBifpfAxRX7/Q5evVxX7B+Xmd5cCktj+mBt7XH8WWMwbxQUJe3GD9YMFRbaCGVd9kvQiR7UNgT+NTq7XFu3r15A2uyZwxOVoavdcxpZhGIcNtdTtpY="
 
     # (!) ENCRYPTED
     #
