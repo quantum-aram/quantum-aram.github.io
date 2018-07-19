@@ -3,7 +3,7 @@
 
 {% if commentCount > 0 %}
 
-<h3>{{ commentCount }} Comments</h3>
+<h3>{{ commentCount }} Comment{% if commentCount > 1 %}s{% endif %}</h3>
 </h3>
   {% for comment in comments %}
     <p>
