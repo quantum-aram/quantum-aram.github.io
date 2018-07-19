@@ -1,7 +1,7 @@
 {% assign comments = site.data.comments | where:'slug',page.slug %}
 {% assign commentCount = comments | size %}
 
-<p id="comments">
+<div id="comments">
 {% if commentCount > 0 %}
 
 <h3>{{ commentCount }} Comment{% if commentCount > 1 %}s{% endif %}</h3>
@@ -19,4 +19,4 @@
   {% endfor %}
 
 {% endif %}
-</p>
+</div>
