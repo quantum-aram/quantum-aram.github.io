@@ -7,7 +7,7 @@
 </h3>
   {% for comment in comments %}
     <p>
-      {% if comment.url != empty %}<a href="{{comment.url}}">{% endif %}
+      {% if comment.url != blank %}<a href="{{comment.url}}">{% endif %}
       <b>{{ comment.name }}</b>
       {% if comment.url != empty %}</a>{% endif %} &nbsp;
       <i>{{ comment.date | date: '%B %d, %Y' }}</i></p>
