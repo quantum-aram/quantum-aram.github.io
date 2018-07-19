@@ -1,10 +1,21 @@
-{% assign comments = site.data.comments | sort %}
+{% assign comments = site.data.comments | where:'slug',page.slug %}
+{% assign commentCount = comments | size %}
 
-{% for comment in comments reversed %}
-  {% assign commentData = comment[1] %}
-    <div>
-      {{ commentData.message }}</br>
-      From: {{ commentData.name }}</br>
-      {{ commentData.date | date_to_long_string }}
-    </div>
-{% endfor %}
+{% if commentCount > 0 %}
+
+<h3>{{ commentCount }} Comments</h3>
+</h3>
+<ul>
+  {% for comment in comments %}
+  <li>
+    <p>
+      <b>{{ review.name }}</b> &nbsp;
+      <i>{{ comment.date | date: '%B %d, %Y' }}</i></p>
+    <p>
+      {{comment.message}}
+    </p>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endif %}
