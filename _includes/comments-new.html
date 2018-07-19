@@ -1,6 +1,6 @@
 <h3>Leave a comment</h3>
 <form method="POST" action="https://api.staticman.net/v2/entry/quantum-aram/quantum-aram.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="{{ site.baseurl }}{{ site.url }}">
+  <input name="options[redirect]" type="hidden" value="{{ site.baseurl }}{{ page.url }}">
 <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
   <input name="fields[slug]" type="hidden" value="{{ page.slug }}">
   <p><label><input name="fields[name]" type="text">Name</label></p>
