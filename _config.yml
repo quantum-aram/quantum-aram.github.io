@@ -6,7 +6,7 @@ title:               Aram blog
 tagline:             I should put a title here
 url:                 https://quantum-aram.github.io
 paginate:            1
-baseurl:             ""
+baseurl:             https://quantum-aram.github.io
 
 # Assets
 #
