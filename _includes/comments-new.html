@@ -6,6 +6,12 @@
   <p><label><input name="fields[name]" type="text">Name</label></p>
   <p><label><input name="fields[url]" type="url" value="https://">URL [optional]</label></p>
   <p><label><textarea name="fields[message]"></textarea>Comment</label></p>
-
-  <button type="submit">Go!</button>
+  <input type="hidden" name="options[reCaptcha][siteKey]" value="6LfVFWUUAAAAAOnpeIdiAbGeH4SLr5-GJOYJ_blk">
+  <input type="hidden" name="options[reCaptcha][secret]" value="JjOazPQR1zsoWO4STaeCexh8N/rn1Cp0a2SY4ejm2Zxw6qLEUMgujDJcyl3fwlnUPScEtN2dVwQlBhNGOTXinJ9Zkr4Fb31SJpgJ/d/a70WZ2UobI1qeUOi4W5xbXxEXyjNYkGFCkX79ODY8Evc+aXoNbe17h07iDcksc0tqfL0=">
+  <button
+  class="g-recaptcha"
+  data-sitekey="6LfVFWUUAAAAAOnpeIdiAbGeH4SLr5-GJOYJ_blk"
+  data-callback="YourOnSubmitFn">
+  Post comment
+  </button>
 </form>
