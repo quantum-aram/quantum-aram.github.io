@@ -5,17 +5,14 @@
 
 <h3>{{ commentCount }} Comments</h3>
 </h3>
-<ul>
   {% for comment in comments %}
-  <li>
     <p>
-      <b>{{ review.name }}</b> &nbsp;
+      <b>{{ comment.name }}</b> &nbsp;
       <i>{{ comment.date | date: '%B %d, %Y' }}</i></p>
-    <p>
-      {{comment.message}}
-    </p>
-  </li>
+    <blockquote>
+        {{comment.message}}
+    </blockquote>
+
   {% endfor %}
-</ul>
 
 {% endif %}
