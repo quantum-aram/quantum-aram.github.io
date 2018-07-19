@@ -10,7 +10,7 @@
       {% if comment.url != empty %}<a href="{{comment.url}}">{% endif %}
       <b>{{ comment.name }}</b>
       {% if comment.url != empty %}</a>{% endif %} &nbsp;
-      <i>{{ comment.date | date: '%B %d, %Y' }}</i></p>
+      <i>{{ comment.date | date: "%Y-%m-%d %H:%M:%S" }}</i></p>
     <blockquote>
         {{comment.message}}
     </blockquote>
