@@ -1,11 +1,11 @@
 {% assign comments = site.data.comments | where:'slug',page.slug %}
 {% assign commentCount = comments | size %}
 
-<div id="comments">
+<p id="comments">
 {% if commentCount > 0 %}
 
 <h3>{{ commentCount }} Comment{% if commentCount > 1 %}s{% endif %}</h3>
-</h3>
+
   {% for comment in comments %}
     <p>
       {% if comment.url != empty %}<a href="{{comment.url}}">{% endif %}
@@ -19,4 +19,4 @@
   {% endfor %}
 
 {% endif %}
-</div>
+</p>
