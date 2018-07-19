@@ -8,6 +8,11 @@ layout: default
   {{ content }}
 </article>
 
+{% include comments-new.html %}
+{% comment %}
+{% include comments.html %}
+{% endcomment %}
+
 {% comment %}
 {% if site.related_posts != empty %}
 <aside class="related">
