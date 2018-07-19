@@ -8,10 +8,8 @@ layout: default
   {{ content }}
 </article>
 
-{% include comments-new.html %}
 {% include comments.html %}
-{% comment %}
-{% endcomment %}
+{% include comments-new.html %}
 
 {% comment %}
 {% if site.related_posts != empty %}
