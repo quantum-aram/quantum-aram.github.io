@@ -19,7 +19,7 @@ title: Home
     {% assign comments = site.data.comments | where:'slug',post.slug %}
     {% assign commentCount = comments | size %}
 
-    <a href="{{ site.baseurl }}{{ post.url }}#comments">{% if commentCount > 0 %}{{ <commentCount>}}{% else %}Leave a{% endif %} comment{% if commentCount > 1 %}s{% endif %}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}#comments">{% if commentCount > 0 %}{{ commentCount }}{% else %}Leave a{% endif %} comment{% if commentCount > 1 %}s{% endif %}</a>
   </article>
   {% endfor %}
 </div>
