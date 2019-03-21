@@ -13,7 +13,7 @@
       {% if comment.url != empty %}</a>{% endif %} &nbsp;
       <i>{{ comment.date | date: "%Y-%m-%d %H:%M:%S" }}</i></p>
     <blockquote>
-        {{comment.message}}
+        {{comment.message | markdownify}}
     </blockquote>
 
   {% endfor %}
