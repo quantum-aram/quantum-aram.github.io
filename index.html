@@ -14,12 +14,14 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.content }}
+    {{ post.excerpt }}
+
+    <p><a href="{{ site.baseurl }}{{ post.url }}">read more</a>
 
     {% assign comments = site.data.comments | where:'slug',post.slug %}
     {% assign commentCount = comments | size %}
 
-    <a href="{{ site.baseurl }}{{ post.url }}#comments">{% if commentCount > 0 %}{{ commentCount }}{% else %}Leave a{% endif %} comment{% if commentCount > 1 %}s{% endif %}</a>
+    <p><a href="{{ site.baseurl }}{{ post.url }}#comments">{% if commentCount > 0 %}{{ commentCount }}{% else %}Leave a{% endif %} comment{% if commentCount > 1 %}s{% endif %}</a></p>
   </article>
   {% endfor %}
 </div>
