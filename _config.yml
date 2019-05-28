@@ -2,11 +2,12 @@
 permalink:           pretty
 
 # Setup
-title:               Aram blog
-tagline:             I should put a title here
+title:               Semidefinite thoughts
+#tagline:             
 url:                 https://quantum-aram.github.io
 paginate:            1
 baseurl:             https://quantum-aram.github.io
+markdown:	     kramdown
 
 # Assets
 #
@@ -18,7 +19,7 @@ sass:
 # About/contact
 author:
   name:              Aram Harrow
-  url:               https://web.mit.edu/aram/
+  url:               https://web.mit.edu/aram/www/
   email:             harrow@gmail.com
 
 # Custom vars
